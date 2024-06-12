@@ -8,6 +8,7 @@ mongoose.connect(process.env.DBURL,).then(()=>{
     console.log("Error is mongoose :"+error)
 })
 
-const notepad_module =  mongoose.model("model",notepad)
+const notepad_module =  mongoose.model("note",notepad)
 
 export default notepad_module
+                                    
